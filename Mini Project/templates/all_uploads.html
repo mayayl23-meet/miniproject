@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<a href="/all_uploads"></a>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='alluploads.css') }}">
+
+<div class="topnav">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/login">Login</a>
+  <a href="/signup">Sign Up</a>
+  <a class="active" href="/all_uploads">All Uploads</a>
+  <a href="/signout">Sign Out</a>
+  <a href="/comments">Comments</a>
+</div>
+<body>
+   <h1> Choose a Blog Post To Read  </h1>
+
+   <div class="row">
+  <div class="column">
+    <div class="card">
+      <h2>The Best Skincare For All Skin Types</h2>
+      <h5>Published August 3rd, 2022</h5>
+      <p>Finding the perfect skincare for your skin type is a very difficult task. That is why I created this post, in order to help you find what works for you...</p>
+      <a href="/post1">View Post</a>
+      <div class="fakeimg" style="height:200px;"><!-- <img src="static/serum.jpeg"> -->
+  </div>
+    </div>
+
+  </div>
+  <div class="column">
+      <div class="card">
+          <h2>My Top 10 Books </h2>
+          <h5>Published August 3rd, 2022</h5>
+          <p>I've read hundreds of books in my lifetime, so I think that I have the ability to judge books and give you the best recommendations. These books will be in varying genres...</p>
+          <div class="fakeimg" style="height:200px;"><!-- <img src="static/books.jpg"> --></div>
+      </div>
+  </div>
+
+  <div class="column">
+      <div class="card">
+          <h2>Summer Outfit Guide</h2>
+          <h5>Published August 4th, 2022</h5>
+          <p>Finding the perfect outfit in the summer that is both adaptable to the heat, colourful and fun, and that you feel good and confident in can be a bit of a difficult task. Here I have compiled the perfect guide...</p>
+          <div class="fakeimg" style="height:200px;"><!-- <img src="static/books.jpg"> --></div>
+      </div>
+  </div>
+
+
+  <div class="column">
+      <div class="card">
+          <h2>My Favourite Restaurants </h2>
+          <h5>Published August 4th, 2022</h5>
+          <p>I absolutely adore going out to new places and trying new foods, but humans are creatures of habit and that is why I always tend to go back to my favourite places. I have divided all these places by...</p>
+          <div class="fakeimg" style="height:200px;"><!-- <img src="static/books.jpg"> --></div>
+      </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    <title>Log In</title>
+</head>
+<a href="/login"></a>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="topnav">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a class="active" href="/login">Login</a>
+  <a href="/signup">Sign Up</a>
+  <a href="/all_uploads">All Uploads</a>
+  <a href="/signout">Sign Out</a>
+  <a href="/comments">Comments</a>
+</div>
+<body>
+    
+    
+    
+
+<!-- Add icon library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+
+</head>
+<body>
+
+<form action="/login" method="POST" style="max-width:500px;margin:auto">
+  <h2>Login To Your Account</h2>
+  <div class="input-container">
+    <i class="fa fa-user icon"></i>
+    <input class="input-field" type="text" placeholder="Username" name="username">
+  </div>
+
+  
+  <div class="input-container">
+    <i class="fa fa-key icon"></i>
+    <input class="input-field" type="password" placeholder="Password" name="password">
+  </div>
+
+  <button type="submit" class="btn">Login</button>
+</form>
+
+   
+</body>
+</html>

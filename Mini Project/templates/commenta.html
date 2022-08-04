@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Comments</title>
+</head>
+<a href="/signout"></a>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="topnav">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/login">Login</a>
+  <a href="/signup">Sign Up</a>
+  <a href="/all_uploads">All Uploads</a>
+  <a href="/signout">Sign Out</a>
+  <a class="active" href="/comments">Comments</a>
+
+</div>
+<body>
+       <h1> Write Your Comments Here: </h1>
+</body>
+<br>
+<form action="/comments" method="POST"> 
+    <input type="text" name="title" placeholder="Title">
+    <input type="text" name="text" placeholder="Text">
+<div>
+            <input type="submit" value="Submit" /> 
+        </div>
+</form>
+<br>
+    <a href="/all_comments"><button>View All Comments</button></a>
+    
+   
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>All Comments</title>
+</head>
+<a href="/post1"></a>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+<div class="topnav">
+  <a href="/">Home</a>
+  <a href="/about">About</a>
+  <a href="/login">Login</a>
+  <a href="/signup">Sign Up</a>
+  <a href="/all_uploads">All Uploads</a>
+  <a href="/signout">Sign Out</a>
+  <a class="active" href="/comments">Comments</a>
+</div>
+<body>
+  <h3> All Comments </h3>
+    {% for i in comment %}
+    <li> {{comment[i]['Title']}} </li>
+    <li> {{comment[i]['Text']}}</li>
+      {% endfor %}
+</html>
+</body>
+</html>

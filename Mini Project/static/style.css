@@ -1,0 +1,30 @@
+body {background-color: lightpink;}
+
+
+
+.topnav {
+  background-color: #242582;
+  overflow: hidden;
+}
+
+/* nav bar links */
+.topnav a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #99738B;
+  color: white;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #F64C72;
+  color: white;
+}
